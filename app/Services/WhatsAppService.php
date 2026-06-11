@@ -87,7 +87,7 @@ class WhatsAppService
                 CURLOPT_TIMEOUT => 30,                  // Timeout 30 detik
             ]);
 
-            $response = curl_exec($ch);
+            $response = curl_exec($ch); //ini tombol enter untuk eksekusi pengiriman datanya
             $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
             $curlError = curl_error($ch);
             curl_close($ch);
